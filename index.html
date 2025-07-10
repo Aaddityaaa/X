@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Twitter</title>
+        <link rel="stylesheet" href="./src/output.css">
+        <link rel="shortcut icon" href="assects/favicon.ico"
+            type="image/x-icon">
+
+        <!-- <style>
+            .custom-scroll {
+                scrollbar-width: none; /* Firefox */
+                -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            }
+
+            .custom-scroll::-webkit-scrollbar {
+                display: none;  /* Safari and Chrome */
+            }
+        </style> -->
+
+        <style>
+  .custom-scroll {
+    scrollbar-width: thin;         /* Firefox */
+    scrollbar-color: #555 transparent;
+  }
+
+  .custom-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 20px;
+  }
+</style>
+
+
+    </head>
+    <body class="bg-black text-white">
+
+        <div class="flex container mx-auto py-1">
+            <div class="first  w-16 md:w-[70%]">
+
+                <div class=" sticky top-0 siderbar flex justify-start">
+
+                    <ul
+                        class="flex items-end  px-2 md:items-start flex-col space-y-8 md:px-10 font-bold gap-[30px] sm:gap-0">
+                        <div class="logo my-3 md:mr-16">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"
+                                class="w-8 invert m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"><g><path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+                        </div>
+                        <li
+                            class="flex justify-start items-center gap-3 md:w-fit md:px-2 py-1 hover:bg-gray-800 hover:rounded-xl hover:cursor-pointer "><img
+                                src="assects/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="Home"><span
+                                class="hidden md:block">Home</span> </li>
+                        <li
+                            class="flex justify-start items-center gap-3 md:w-fit md:px-2 py-1 hover:bg-gray-800 hover:rounded-xl hover:cursor-pointer "><img
+                                src="assects/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="Explore"><span
+                                class="hidden md:block">Explore</span> </li>
+                        <li
+                            class="flex justify-start items-center gap-3 md:w-fit md:px-2 py-1 hover:bg-gray-800 hover:rounded-xl hover:cursor-pointer "><img
+                                src="assects/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="Notifications"><span
+                                class="hidden md:block">Notifications</span>
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-3 md:w-fit md:px-2 py-1 hover:bg-gray-800 hover:rounded-xl hover:cursor-pointer "><img
+                                src="assects/mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="Messages"><span
+                                class="hidden md:block">Messages</span> </li>
+                        <li
+                            class="flex justify-start items-center gap-3 md:w-fit md:px-2 py-1 hover:bg-gray-800 hover:rounded-xl hover:cursor-pointer "><img
+                                src="assects/radio_button_unchecked_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="Grok"><span
+                                class="hidden md:block">Grok</span> </li>
+                        <li
+                            class="flex justify-start items-center gap-3 md:w-fit md:px-2 py-1 hover:bg-gray-800 hover:rounded-xl hover:cursor-pointer "><img
+                                src="assects/account_circle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="Pepole"><span
+                                class="hidden md:block">Pepole</span> </li>
+                        <li
+                            class="flex justify-start items-center gap-3 md:w-fit md:px-2 py-1 hover:bg-gray-800 hover:rounded-xl hover:cursor-pointer "><svg
+                                viewBox="0 0 24 24" aria-hidden="true"
+                                class="w-5 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1472mwg r-lrsllp"
+                                style="color: rgb(15, 20, 25);"><g><path
+                                        d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"></path></g></svg><span
+                                class="hidden md:block">Post</span>
+                        </li>
+                        <div
+                            class="sticky top-[90vh] md:w-[40px] w[32px] mt-[43px] mr-[3px] md:ml-[25px]"><img
+                            class="rounded-full" src="assects/peaky blinders.jpg"
+                            alt></div>
+
+                    </ul>
+                </div>
+                
+            </div>
+
+            <!-- *****************************************************Second************************************************************************* -->
+            <div
+                class="second border-[0.5px] border-x-gray-700 border-y-black w-[140vw]">
+                <div class="top flex ">
+                    <div
+                        class="left hover:bg-gray-900 w-1/2 font-bold flex justify-center py-2">For
+                        You</div>
+                    <div
+                        class="right hover:bg-gray-900 w-1/2 font-bold flex justify-center py-2">Following</div>
+                </div>
+                <div class="whatHappening border border-gray-700">
+                    <div class="flex">
+                        <div class="img w-[40px] rounded-full m-3">
+                            <img class="rounded-full"
+                                src="assects/peaky blinders.jpg" alt>
+                        </div>
+                        <input type="text" placeholder="What's happening?"
+                            class="text-xl w-full border-none outline-none">
+                    </div>
+                    <div class="flex flex-col gap-3 ml-[58px] ">
+                        <div class="flex">
+                            <img
+                                src="assects/globe_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt>
+                            <div
+                                class="text-[#1D9BF0] text-[13px] font-bold">Everyone
+                                can reply</div>
+                        </div>
+                        <div class="w-[92%] h-[1px] bg-gray-600"></div>
+                    </div>
+                    <div class="ml-[58px] my-3 flex justify-between ">
+                        <div>
+                            <ul class="flex gap-5 justify-center pt-2">
+                                <li><img src="assects/gallery.svg" alt></li>
+                                <li><img
+                                        src="assects/gif_box_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                        alt></li>
+                                <li><img
+                                        src="assects/ballot_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                        alt></li>
+                                <li><img
+                                        src="assects/mood_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                        alt></li>
+                                <li><img
+                                        src="assects/calendar_clock_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                        alt></li>
+                                <li><img
+                                        src="assects/distance_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                        alt></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button
+                                class="px-4 py-1 bg-white text-black rounded-full font-bold mx-3">Post</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <div class="post ">
+                        <div class="flex gap-0.5">
+                            <div class=" image w-[70px] m-2 ">
+                                <img class="rounded-full"
+                                    src="assects/peaky blinders.jpg"
+                                    alt></div>
+                            <div class="content mt-1">
+                                <span
+                                    class="hover:underline hover:cursor-pointer font-bold">Peaky
+                                    Blinders</span> <span
+                                    class="text-gray-600 hover:cursor-pointer">
+                                    @peakyBlinders .6h</span>
+                                <div class="text-[13px]">legend</div>
+                                <div class="postimg m-4 ">
+                                    <img class="rounded-[10px]"
+                                        src="https://pbs.twimg.com/media/F7MppK9XsAAkggw?format=jpg&name=900x900"
+                                        alt>
+                                </div>
+                                <div
+                                    class="icons flex text-xs text-[#71767b] justify-between">
+                                    <span
+                                        class="flex hover:cursor-pointer gap-1"><img
+                                            src="assects/mode_comment_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>5.1K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/repeat_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>4.9K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>32K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/bar_chart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>7.1M</span>
+                                    <div class="flex">
+                                        <span class="hover:cursor-pointer"><img
+                                                src="assects/bookmark_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                                alt></span>
+                                        <span class="hover:cursor-pointer"><img
+                                                src="assects/upload_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                                alt></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="text-[#71767b] my-3">
+                </div>
+                <div class="posts">
+                    <div class="post ">
+                        <div class="flex gap-0.5">
+                            <div class=" image w-[70px] m-2 ">
+                                <img class="rounded-full"
+                                    src="assects/peaky blinders.jpg"
+                                    alt></div>
+                            <div class="content mt-1">
+                                <span
+                                    class="hover:underline hover:cursor-pointer font-bold">Peaky
+                                    Blinders</span> <span
+                                    class="text-gray-600 hover:cursor-pointer">
+                                    @peakyBlinders .6h</span>
+                                <div class="text-[13px]">legend</div>
+                                <div class="postimg m-4 ">
+                                    <img class="rounded-[10px]"
+                                        src="https://pbs.twimg.com/media/F7MppK9XsAAkggw?format=jpg&name=900x900"
+                                        alt>
+                                </div>
+                                <div
+                                    class="icons flex text-xs text-[#71767b] justify-between">
+                                    <span
+                                        class="flex hover:cursor-pointer gap-1"><img
+                                            src="assects/mode_comment_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>5.1K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/repeat_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>4.9K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>32K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/bar_chart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>7.1M</span>
+                                    <div class="flex">
+                                        <span class="hover:cursor-pointer"><img
+                                                src="assects/bookmark_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                                alt></span>
+                                        <span class="hover:cursor-pointer"><img
+                                                src="assects/upload_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                                alt></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="text-[#71767b] my-3">
+                </div>
+                <div class="posts">
+                    <div class="post ">
+                        <div class="flex gap-0.5">
+                            <div class=" image w-[70px] m-2 ">
+                                <img class="rounded-full"
+                                    src="assects/peaky blinders.jpg"
+                                    alt></div>
+                            <div class="content mt-1">
+                                <span
+                                    class="hover:underline hover:cursor-pointer font-bold">Peaky
+                                    Blinders</span> <span
+                                    class="text-gray-600 hover:cursor-pointer">
+                                    @peakyBlinders .6h</span>
+                                <div class="text-[13px]">legend</div>
+                                <div class="postimg m-4 ">
+                                    <img class="rounded-[10px]"
+                                        src="https://pbs.twimg.com/media/F7MppK9XsAAkggw?format=jpg&name=900x900"
+                                        alt>
+                                </div>
+                                <div
+                                    class="icons flex text-xs text-[#71767b] justify-between">
+                                    <span
+                                        class="flex hover:cursor-pointer gap-1"><img
+                                            src="assects/mode_comment_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>5.1K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/repeat_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>4.9K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>32K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/bar_chart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>7.1M</span>
+                                    <div class="flex">
+                                        <span class="hover:cursor-pointer"><img
+                                                src="assects/bookmark_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                                alt></span>
+                                        <span class="hover:cursor-pointer"><img
+                                                src="assects/upload_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                                alt></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="text-[#71767b] my-3">
+                </div>
+                <div class="posts">
+                    <div class="post ">
+                        <div class="flex gap-0.5">
+                            <div class=" image w-[70px] m-2 ">
+                                <img class="rounded-full"
+                                    src="assects/peaky blinders.jpg"
+                                    alt></div>
+                            <div class="content mt-1">
+                                <span
+                                    class="hover:underline hover:cursor-pointer font-bold">Peaky
+                                    Blinders</span> <span
+                                    class="text-gray-600 hover:cursor-pointer">
+                                    @peakyBlinders .6h</span>
+                                <div class="text-[13px]">legend</div>
+                                <div class="postimg m-4 ">
+                                    <img class="rounded-[10px]"
+                                        src="https://pbs.twimg.com/media/F7MppK9XsAAkggw?format=jpg&name=900x900"
+                                        alt>
+                                </div>
+                                <div
+                                    class="icons flex text-xs text-[#71767b] justify-between">
+                                    <span
+                                        class="flex hover:cursor-pointer gap-1"><img
+                                            src="assects/mode_comment_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>5.1K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/repeat_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>4.9K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>32K</span>
+                                    <span class="flex hover:cursor-pointer"><img
+                                            src="assects/bar_chart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                            alt>7.1M</span>
+                                    <div class="flex">
+                                        <span class="hover:cursor-pointer"><img
+                                                src="assects/bookmark_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                                alt></span>
+                                        <span class="hover:cursor-pointer"><img
+                                                src="assects/upload_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                                alt></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="text-[#71767b] my-3">
+                </div>
+
+            </div>
+
+            <!-- ********************************************************Third************************************************************** -->
+            <div class="third lg:w-full w-[200px] hidden md:block custom-scroll">
+
+                <div>
+                    <div
+                        class="search flex relative gap-1 rounded-full w-[147px] lg:w-[300px] border border-gray-700 m-2">
+                        <div>
+                            <img class="absolute left-5 top-2.5 w-4"
+                                src="assects/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt>
+                        </div>
+                        <input type="text" placeholder="Search"
+                            class="lg:w-[300px] w-[140px] rounded-full bg-gray-900 px-8 py-1 ">
+                    </div>
+                    <div
+                        class="lg:w-[300px] w-[157px] m-2  border border-gray-700 bg-gray-900 rounded-[10px] ">
+                        <h1 class="p-2 font-bold text-xl ">Subscribe to
+                            premimum</h1>
+                        <p class="p-2">Subscribe to unlock new features and if
+                            eligible, receive a share of revenue.</p>
+                        <button
+                            class="font-bold px-2 py-1 m-2 bg-[rgb(29,155,240,1)] rounded-full hover:cursor-pointer">Subscribe</button>
+
+                    </div>
+                    <div
+                        class=" lg:w-[300px] w-[157px] m-2  border border-gray-700 bg-gray-900 rounded-[10px] ">
+                        <h1 class="p-2 font-bold text-xl">What's happening</h1>
+                        <div
+                            class="items my-1.5 hover:bg-gray-800 cursor-pointer p-2">
+                            <div class="text-gray-500 text-[14px] ">Trending in
+                                India</div>
+                            <div class="font-bold text-[15px]">#Hollywood</div>
+                            <div class="text-gray-500 text-[14px]">13.3K
+                                post</div>
+                        </div>
+                        <div
+                            class="items my-1.5 hover:bg-gray-800 cursor-pointer p-2">
+                            <div class="text-gray-500 text-[14px] ">Darshan
+                                Thoogudeepa</div>
+                            <div
+                                class="font-bold text-[15px]">#BossOfSandalwood</div>
+                            <div class="text-gray-500 text-[14px]">14.5K
+                                post</div>
+                        </div>
+                        <div
+                            class="items my-1.5 hover:bg-gray-800 cursor-pointer p-2">
+                            <div class="text-gray-500 text-[14px] ">Sports</div>
+                            <div class="font-bold text-[15px]">#Bazball</div>
+                            <div class="text-gray-500 text-[14px]">3,234
+                                post</div>
+                        </div>
+                        <div
+                            class="p-2 text-[rgb(29,155,240,1)] hover:cursor-pointer">Show
+                            more</div>
+                    </div>
+                    <div
+                        class="lg:w-[300px] w-[157px] m-2 border border-gray-700 bg-gray-900 rounded-[10px] overflow-auto max-h-[300px]">
+
+                        <h1 class="p-2 font-bold text-xl">Who to follow</h1>
+                        <div
+                            class="p-2 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3">
+                            <div class="flex gap-2 items-center">
+                                <div
+                                    class="w-10 h-10 rounded-full overflow-hidden">
+                                    <img class="w-full h-full object-cover"
+                                        src="assects/virat.jpg" alt />
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-1">
+                                        <div class="font-bold">Virat Kohli</div>
+                                        <img class="w-4 h-4"
+                                            src="assects/instagram_blue_full.svg"
+                                            alt />
+                                    </div>
+                                    <div
+                                        class="text-gray-500 text-sm">@imVkohli</div>
+                                </div>
+                            </div>
+                            <button
+                                class="font-bold px-4 py-1 bg-white text-black rounded-full hover:cursor-pointer">
+                                Follow
+                            </button>
+                        </div>
+
+                        <div
+                            class="p-2 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3">
+                            <div class="flex gap-2 items-center">
+                                <div
+                                    class="w-10 h-10 rounded-full overflow-hidden">
+                                    <img class="w-full h-full object-cover"
+                                        src="assects/cillian Murphy.jpg" alt />
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-1">
+                                        <div class="font-bold">Virat Kohli</div>
+                                        <img class="w-4 h-4"
+                                            src="assects/instagram_blue_full.svg"
+                                            alt />
+                                    </div>
+                                    <div
+                                        class="text-gray-500 text-sm">@imVkohli</div>
+                                </div>
+                            </div>
+                            <button
+                                class="font-bold px-4 py-1 bg-white text-black rounded-full hover:cursor-pointer">
+                                Follow
+                            </button>
+                        </div>
+
+                        <div
+                            class="p-2 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3">
+                            <div class="flex gap-2 items-center">
+                                <div
+                                    class="w-10 h-10 rounded-full overflow-hidden">
+                                    <img class="w-full h-full object-cover"
+                                        src="assects/Ronaldo.jpg" alt />
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-1">
+                                        <div class="font-bold">Virat Kohli</div>
+                                        <img class="w-4 h-4"
+                                            src="assects/instagram_blue_full.svg"
+                                            alt />
+                                    </div>
+                                    <div
+                                        class="text-gray-500 text-sm">@imVkohli</div>
+                                </div>
+                            </div>
+                            <button
+                                class="font-bold px-4 py-1 bg-white text-black rounded-full hover:cursor-pointer">
+                                Follow
+                            </button>
+                        </div>
+
+                        <div
+                            class="p-2 text-[rgb(29,155,240,1)] hover:cursor-pointer">Show
+                            more</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
